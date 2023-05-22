@@ -1,10 +1,10 @@
-@extends ('layouts.common_layout')
-
-@section('css')
-    <link rel="stylesheet" href="public/CSS/create.css">
-@endsection
-
-@section('content')
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+<body>
       <h1>Blog Name</h1>
         <form action="/" method="POST" enctype='multipart/form-data'>
             @csrf
@@ -46,4 +46,5 @@
         </form>
         <div class="footer">
             <a href="/">戻る</a>
-@endsection
+</body>
+</html>

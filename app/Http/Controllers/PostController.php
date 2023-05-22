@@ -34,14 +34,14 @@ class PostController extends Controller
             return view('article.article_tempre')->with(['post'=>$post]);
         }
         //トップページ　一覧取得
-        public function index(Post $post)
+        public function new_main(Post $post)
         {
-            return view('article.new_main')->with(['post'=>$post]);
+            return view('article.new_main')->with(['post'=>$post->get()]);
         }
         
         public function tyaritabi(Post $post)
         {
-            return view('layouts.tyaritabi')->with(['post'=>$post]);
+            return view('layouts.tyaritabi')->with(['post'=>$post->get()]);
         }
         
         public function tabimeshi(Post $post)
@@ -54,4 +54,5 @@ class PostController extends Controller
             return view('layouts.article_list')->with(['post'=>$post->get()]);
         }
         
+      
 }

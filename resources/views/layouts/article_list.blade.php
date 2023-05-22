@@ -2,7 +2,7 @@
 @section('content')
 <div class="container">
 <div class="row">
-@foreach ($posts as $post)
+@foreach ($post as $post)
   <div class="col-md-4">
     <div class="card mb-4 shadow-sm">
         <div class="bd-placeholder-img card-img-top">
@@ -27,5 +27,9 @@
         </div>
     </div>
   </div>
+  
+  
 @endforeach
+
+<a class="btn btn-primary" href="product" role="button">コメントを見にいく</a>
 @endsection

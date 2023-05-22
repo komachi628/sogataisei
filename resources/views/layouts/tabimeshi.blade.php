@@ -2,7 +2,7 @@
 @section('content')
 <div class="container">
 <div class="row">
-@foreach ($posts as $post)
+@foreach ($post as $post)
 @if($post->category === '旅飯')
   <div class="col-md-4">
     <div class="card mb-4 shadow-sm">
@@ -31,4 +31,7 @@
   
 @endif
 @endforeach
+
+<a class="btn btn-primary" href="product" role="button">コメントを見にいく</a>
+
 @endsection

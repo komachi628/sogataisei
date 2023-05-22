@@ -11,7 +11,9 @@
         <link rel ="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        
         
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -27,28 +29,49 @@
             }
         </style>
         
+        <link rel="stylesheet" href="/css/common.css" >
         @yield('css')
 
     </head>
 <body>
+
+
     <header class="jumbotron">
       <div class="container">
         <h1>小町ブログ</h1>
         <p><a href='/'class="btn btn-lg midashi-btn" role="button">home</a></p>
         <p><a href='/'class="btn btn-lg midashi-btn" role="button">top</a></p>
         
+        
       </div>
-</header>
+    </header>
+    	
+
+<div class="sidebar_fixed">
+    <p><h3><a href='/article_list'>記事一覧</a></h3></p>
+    <p><h3><a href='/tyaritabi'>チャリ旅！</a></h3></p>
+    <p><h3><a href='/tabimeshi'>旅飯</a></h3></p>
+</div>
+
 @yield('content')
 
 @yield('comment')
 
-
-</div>
-<footer>
-  	<p>小町ブログ</p>
-  	<p>snsのリンク</p>
-  </footer>
+       
+  <footer class="jumbotron">
+      <div class="container">
+        <h4>小町ブログ</h4>
+        <p><a href='/'class="btn btn-lg midashi-btn" role="button">home</a></p>
+       <center>
+      <div class="sosyal">
+        <a href="http://www.facebook.com/share.php?u=https://www.facebook.com/profile.php?id=100092199039850" class="facebook">Facebook</a>
+        <a href="https://twiter.com/share?url=" class="twitter">Twitter</a>
+        <a href="https://www.google.co.jp/?client=safari&channel=iphone_bm" class="google">Google</a>
+    　</div>
+</center>
+        
+      </div>
+    </footer>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
